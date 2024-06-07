@@ -1,0 +1,4 @@
+float64 speed_of_sound
+---
+bool success
+string message

@@ -32,12 +32,16 @@ find_package(geometry_msgs REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/ConfigResult.msg"
   "msg/DeadReckoning.msg"
   "msg/DeadReckoningReport.msg"
   "msg/Transducer.msg"
   "msg/Velocity.msg"
   "msg/VelocityTransducerReport.msg"
-
+  "srv/GetConfig.srv"
+  "srv/ResetDeadReckoning.srv"
+  "srv/SetAcousticEnabled.srv"
+  "srv/SetSpeedOfSound.srv"
   DEPENDENCIES builtin_interfaces std_msgs geometry_msgs
 )
 

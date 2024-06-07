@@ -1,0 +1,4 @@
+bool acoustic_enabled
+---
+bool success
+string message
